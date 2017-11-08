@@ -1,0 +1,150 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .softapp
+    margin-right: -17px
+
+  nav
+    display: inline-block
+
+  .it-icon,
+  .it-text
+    display: table-cell
+    vertical-align: top
+
+  .left-choose .left-choose-item .it-icon
+    float: right
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .softapp
+    font-size: 35px
+
+  .main-h1
+    font-size: 32px
+  .main-p
+    font-size: 20px
+
+  header .logo .logo-img img
+    width: 35px
+    height: 35px
+
+  header .logo .brand-name
+    margin-left: 15px
+
+  header .logo
+    padding-top: 10px
+    padding-bottom: 10px
+
+  #simple-stunning .center-block .main-h1
+    font-size: 28px
+
+  #simple-stunning .center-block .main-p
+    font-size: 17px
+
+  .softapp
+    margin-right: -26px
+    margin-left: -20px
+
+  .fa
+    font-size: 50px
+
+  nav
+    display: none
+    position: absolute
+    left: 0
+    top: 55px
+    z-index: 10
+    text-align: left
+    padding: 20px 40px 20px 40px
+    background-color: rgb(27, 27, 27)
+  nav ul li
+    display: block
+    padding: 20px 0 20px 0
+  nav ul li a
+
+  .btn-menu
+    display: block
+
+  #pricing-packages .container .sail
+    flex-wrap: wrap
+
+  #amazing-features .flex-wrap
+    flex-wrap: wrap
+
+  .telefon
+    margin: 0 auto
+    margin-bottom: 50px
+
+.it-icon,
+.it-text
+  display: block
+  text-align: center
+
+.left-choose .left-choose-item .it-icon
+  float: none
+
+.left-choose-item
+  .it-icon
+    padding-left: 0
+
+.left-choose .left-choose-item .it-icon
+  padding-left: 0
+
+.right-choose .right-choose-item .it-icon
+  padding-right: 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .main-h1
+    font-size: 22px
+  #simple-stunning .main-p
+    font-size: 16px
+
+  .compos img
+    width: 100%
+    margin: 0 0 0 0
+
+  .telefon
+    max-width: 50%
+
+  .subscribe-info
+    flex-direction: column
+
+  #subscribe .but
+    margin-left: 0
+    margin-top: 25px
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  #pricing-packages .container .sail .sail-item .money-value
+    font-size: 30px
+
+  #pricing-packages .container .sail .sail-item p
+    font-size: 17px
+    margin-left: 90px
+
+  #pricing-packages .container .sail .sail-item .fa
+    font-size: 20px
+    margin-left: 44px
+
+  .zagolovok
+    margin-left: 80px
+
+  #pricing-packages .container .sail .sail-item .btn
+    margin-left: 48px
+
+  .telefon
+    max-width: 100%
+
+  #subscribe .subscribe-inpute
+    min-width: 290px  
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){}
