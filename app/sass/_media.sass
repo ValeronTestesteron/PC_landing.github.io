@@ -5,10 +5,8 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
   .softapp
-    margin-right: -17px
-
-  nav
-    display: inline-block
+    margin-right: -8px
+    margin-left: -10px
 
   .it-icon,
   .it-text
@@ -18,9 +16,16 @@
   .left-choose .left-choose-item .it-icon
     float: right
 
+  #amazing-features .flex-wrap .tel-img
+    margin: -59px 0px 0px -257px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+  .compos img
+    max-width: 137%
+    margin: 0 0 0 -120px
+
   .softapp
     font-size: 35px
 
@@ -47,8 +52,8 @@
     font-size: 17px
 
   .softapp
-    margin-right: -26px
-    margin-left: -20px
+    margin-right: -9px
+    margin-left: -25px
 
   .fa
     font-size: 50px
@@ -80,23 +85,47 @@
     margin: 0 auto
     margin-bottom: 50px
 
-.it-icon,
-.it-text
-  display: block
-  text-align: center
+  .it-icon,
+  .it-text
+    display: block
+    text-align: center
 
-.left-choose .left-choose-item .it-icon
-  float: none
+  .left-choose .left-choose-item .it-icon
+    float: none
 
-.left-choose-item
-  .it-icon
+  .left-choose-item
+    .it-icon
+      padding-left: 0
+
+  .left-choose .left-choose-item .it-icon
     padding-left: 0
 
-.left-choose .left-choose-item .it-icon
-  padding-left: 0
+  .right-choose .right-choose-item .it-icon
+    padding-right: 0
 
-.right-choose .right-choose-item .it-icon
-  padding-right: 0
+  .flex-wrap
+    flex-direction: column
+    justify-content: flex-start
+
+  #highly .main-h1
+    text-align: center
+    font-size: 30px
+    margin-bottom: 30px
+
+  #highly .but
+    display: inline-block
+    margin-bottom: 50px
+
+  .list-mobile
+    margin-bottom: 60px
+
+  #amazing-features .flex-wrap .tel-img
+    order: 2
+    margin-left: -80px
+    width: 90%
+
+  .mod-des
+    display: flex
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -106,8 +135,8 @@
     font-size: 16px
 
   .compos img
-    width: 100%
-    margin: 0 0 0 0
+    width: 60%
+    margin-left: 25px
 
   .telefon
     max-width: 50%
@@ -119,7 +148,34 @@
     margin-left: 0
     margin-top: 25px
 
+  #top
+    margin-left: 0
 
+  .mod-des
+    display: block
+
+  #amazing-features .flex-wrap .amazing
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 500px
+
+  #amazing-features .flex-wrap .amazing .main-h1
+    margin-bottom: 10px
+    align-self: flex-start
+
+  #simple-stunning a
+    word-wrap: normal
+
+  #amazing-features .flex-wrap .amazing .mod-des .mob-des-it
+    margin-bottom: 40px
+
+  #amazing-features .flex-wrap .tel-img
+    padding-top: 50px
+    min-width: 100%
+
+  .wrap-nav
+    width: 100%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -144,7 +200,16 @@
     max-width: 100%
 
   #subscribe .subscribe-inpute
-    min-width: 290px  
+    min-width: 290px
+
+  .compos img
+    width: 100%
+    margin-left: -10px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px){}
+
+
+@media only screen and (min-width : 992px)
+  nav
+    display: inline-block !important

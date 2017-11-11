@@ -5,6 +5,10 @@ var gulp         = require('gulp'), // Подключаем Gulp
     concat       = require('gulp-concat'), // Подключаем Concat
     uglify       = require('gulp-uglifyjs'), //Подключаем uglifyjs
     cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
+    del          = require('del'),
+    cache        = require('gulp-cache'),
+    imagemin     = require('gulp-imagemin'), // Подключаем Imagemin
+    cleanCSS     = require('gulp-clean-css'),
     rename       = require('gulp-rename');
 
 

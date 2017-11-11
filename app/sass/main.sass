@@ -67,12 +67,16 @@ nav
       display: inline-block
       margin-left: 14px
       margin-right: 14px
+      position: relative
+      &:hover .drop-menu
+        opacity: 1
       a
         color: #fff
         transition: .4s all ease
       a:hover
         color: #3ec7c2
         transition: .4s all ease
+
 
 #innovative-solutions
   background-color: #3ec7c2
@@ -135,6 +139,8 @@ nav
       transition: .4s all ease
 
 #simple-stunning
+  padding-top: 30px
+  padding-bottom: 30px
   background-color: #27292b
   .main-h1
     color: #fff
@@ -149,7 +155,8 @@ nav
     line-height: 3.5
   p
     color: #fff
-    font-size: 12px
+    fill: #27292b
+    font-size: 14px
     line-height: 1.8
     margin-bottom: 40px
 
@@ -166,6 +173,8 @@ nav
     color: #000
 
 #why-choose-us
+  padding-top: 30px
+  padding-bottom: 50px
   a
     color: #229692
     font-size: 20px
@@ -278,14 +287,22 @@ nav
   text-align: center
   margin-left: 98px
 
+.flex-wrap
+  display: flex
+  align-items: center
+  justify-content: space-around
+
 #highly
   background-color: rgb(39, 41, 43)
   .main-h1
     color: #fff
     margin-bottom: 65px
     margin-top: 70px
-    .but
-      top: 0
+  .but
+    top: 0
+    font-size: 19px
+    padding: 17px 30px
+    text-transform: uppercase
 
 #amazing-features
   background-color: rgb(62, 199, 194)
@@ -294,10 +311,13 @@ nav
     align-items: center
     .tel-img
       padding-top: 110px
-      margin: -59px 0px 0px -438px
+      margin: -59px 0px 0px -377px
       max-width: 100%
     .amazing
       flex-basis: 60%
+      .main-h1
+        color: #fff
+        margin-bottom: 40px
       .main-p
         color: #fff
       .mod-des
@@ -392,8 +412,84 @@ header
       text-decoration: none
 
 
+.top
+  position: fixed
+  bottom: -80px
+  right: 40px
+  background-color: #3ec7c2
+  color: #fff
+  width: 45px
+  height: 45px
+  text-align: center
+  line-height: 43px
+  cursor: pointer
+  transition: all .4s ease
+  &:hover
+    background-color: #229692
+  &.active
+    bottom: 30px
 
 
 
+.preloader
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 100
+  background-color: #323232
+
+@mixin opacity($opacity)
+  opacity: $opacity / 100
+  filter: alpha(opacity=$opacity)
+
+.pulse
+  position: relative
+  left: 50%
+  top: 50vh
+  margin-left: -40px
+  margin-right: -40px
+  &::before, &::after
+    content: ''
+    border: 5px solid rgb(67, 67, 69)
+    width: 80px
+    height: 80px
+    border-radius: 50px
+    position: absolute
+  &::before
+    animation: pulse-outer .8s ease-in infinite
+  &::after
+    animation: pulse-inner .8s linear infinite
+
+@keyframes pulse-outer
+  0%
+    @include opacity(100)
+  50%
+    @include opacity(50)
+  100%
+    @include opacity(0)
+
+@keyframes pulse-inner
+  0%
+    @include opacity(0)
+    transform: scale(0)
+  100%
+    @include opacity(100)
+    transform: scale(1)
+
+.fixed
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+
+.wrap-nav
+  background-color: #1b1b1b
+  z-index: 10
+
+.top.active
+  .fa
+    font-size: 15px
 
 @import "media" // Всегда в конце
