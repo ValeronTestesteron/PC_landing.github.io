@@ -424,23 +424,23 @@ nav {
     border: 1px #f4f4f4 solid; }
 
 footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #1b1b1b; }
   footer .soctial {
-    padding-top: 70px;
-    margin-bottom: 30px; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 60px;
+    margin-bottom: 15px; }
     footer .soctial .soctial-ul li {
       margin-left: 15px;
       display: inline-block; }
@@ -476,9 +476,10 @@ footer {
         transition: .5s ease all; }
 
 .copirite {
+  text-align: center;
   color: #fff;
   font-size: 19px;
-  margin-bottom: 70px; }
+  padding-bottom: 60px; }
   .copirite a {
     -webkit-transition: .5s ease all;
     -o-transition: .5s ease all;
