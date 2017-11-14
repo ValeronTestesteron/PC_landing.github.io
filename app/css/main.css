@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
   margin: 0;
   padding: 0;
   line-height: 1;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-family: 'Raleway', Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6, div, span, img, nav, ul, li, a, p {
   padding: 0;
@@ -423,7 +423,7 @@ nav {
     background-color: #f4f4f4;
     border: 1px #f4f4f4 solid; }
 
-header {
+footer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -438,16 +438,18 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #1b1b1b; }
-  header .soctial {
+  footer .soctial {
     padding-top: 70px;
     margin-bottom: 30px; }
-    header .soctial .soctial-ul li {
+    footer .soctial .soctial-ul li {
       margin-left: 15px;
       display: inline-block; }
-      header .soctial .soctial-ul li a {
+      footer .soctial .soctial-ul li:first-child {
+        margin-left: 0; }
+      footer .soctial .soctial-ul li a {
         width: 50px;
         height: 50px;
-        line-height: 25px;
+        line-height: 30px;
         -webkit-border-radius: 50%;
                 border-radius: 50%;
         -webkit-transition: .5s ease all;
@@ -456,17 +458,17 @@ header {
         padding: 13px;
         text-align: center;
         display: block; }
-        header .soctial .soctial-ul li a:hover {
+        footer .soctial .soctial-ul li a:hover {
           background-color: #3ec7c2;
           -webkit-transition: .5s ease all;
           -o-transition: .5s ease all;
           transition: .5s ease all; }
-          header .soctial .soctial-ul li a:hover .fa {
+          footer .soctial .soctial-ul li a:hover .fa {
             color: #fff;
             -webkit-transition: .5s ease all;
             -o-transition: .5s ease all;
             transition: .5s ease all; }
-      header .soctial .soctial-ul li .fa {
+      footer .soctial .soctial-ul li .fa {
         font-size: 20px;
         color: #3ec7c2;
         -webkit-transition: .5s ease all;
