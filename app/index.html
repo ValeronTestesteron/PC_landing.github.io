@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+sss<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC_landing</title>
-    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
@@ -246,6 +245,7 @@
 
     <div class="top" title="Наверх"><i class="fa fa-angle-up"></i></div>
 
+  <link rel="stylesheet" href="css/main.css">
   <script src="js/common.js"></script>
   <script src="js/libs.min.js"></script>
 
@@ -255,48 +255,31 @@
       $("#menu").slideToggle(500);
     });
 
-
+  //появление кнопки наверх
     $(window).scroll(function (){
-    if ($(this).scrollTop() >= 300) {
-      $('.top').addClass('active');
-    } else {
-      $('.top').removeClass('active');
-    }
+      if ($(this).scrollTop() >= 300) {
+        $('.top').addClass('active');
+      } else {
+        $('.top').removeClass('active');
+      }
     });
 
+  //кнопка наверх
     $('.top').click(function () {
       $('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
     });
 
+ //исчизновение прелоудера
     $(window).on('load', function(){
       $('.preloader').delay(1000).fadeOut('slow');
     });
 
-
-    var navPos, winPos, navHeight;
-
-    function refreshVar() {
-      navPos = $('.wrap-nav').offset().top;
-      navHeight = $('.wrap-nav').outerHeight(true);
+  // Меню + скролл
+    var options = {
+      offset: 50
     }
 
-    refreshVar();
-    $(window).resize(refreshVar);
-
-      $('<div class="clone-nav"></div>').insertBefore('.wrap-nav').css('height', navHeight).hide();
-
-    $(window).scroll(function() {
-      winPos = $(window).scrollTop();
-
-      if (winPos >= navPos) {
-        $('.wrap-nav').addClass('fixed');
-        $('.clone-nav').show();
-      }
-      else {
-        $('.wrap-nav').removeClass('fixed');
-        $('.clone-nav').hide();
-      }
-    });
+    var header = new Headhesive('header', options);
 
 
   </script>

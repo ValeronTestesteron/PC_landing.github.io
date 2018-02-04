@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6, div, span, img, nav, ul, li, a, p {
   list-style-type: none; }
 
 header {
+  opacity: 0;
   background-color: #1b1b1b; }
   header .logo {
     display: -webkit-box;
@@ -587,15 +588,35 @@ footer {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
-.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; }
-
 .wrap-nav {
+  width: 100%;
   background-color: #1b1b1b;
-  z-index: 10; }
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+.headhesive {
+  top: 0;
+  position: fixed;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  width: 100%;
+  z-index: 10;
+  opacity: 1; }
+
+.headhesive--stick .logo {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  padding: 0; }
+
+.headhesive--unstick .logo {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  padding: 25px 0; }
 
 .top.active .fa {
   font-size: 15px; }

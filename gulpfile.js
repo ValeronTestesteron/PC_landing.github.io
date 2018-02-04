@@ -31,6 +31,7 @@ var gulp         = require('gulp'), // Подключаем Gulp
       return gulp.src([
         'app/libs/jquery/dist/jquery.js',
         'app/libs/bootstrap/dist/js/bootstrap.min.js',
+        'app/libs/headhesive.js-master/dist/headhesive.min.js',
           ])
           .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
           .pipe(uglify()) // Сжимаем JS файл
